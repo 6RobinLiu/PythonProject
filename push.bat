@@ -1,22 +1,37 @@
 @echo off
 cd /d C:\PythonProject
 
-echo --- Git 状态检查 ---
+echo ============================
+echo Checking Git Status...
+echo ============================
 git status
 echo.
 
-echo --- 添加更改文件 ---
+echo ============================
+echo Adding all changes...
+echo ============================
 git add .
-
-echo --- 本地提交 ---
-git commit -m "Auto update"
-
-echo --- 拉取远程分支（防止冲突） ---
-git pull origin main --rebase
-
-echo --- 推送到 GitHub ---
-git push origin main
-
 echo.
-echo --- 已完成推送 ---
+
+echo ============================
+echo Committing changes...
+echo ============================
+git commit -m "Auto update"
+echo.
+
+echo ============================
+echo Pulling latest changes from GitHub...
+echo ============================
+git pull origin main --rebase
+echo.
+
+echo ============================
+echo Pushing to GitHub...
+echo ============================
+git push origin main
+echo.
+
+echo ============================
+echo Push completed successfully!
+echo ============================
 pause
