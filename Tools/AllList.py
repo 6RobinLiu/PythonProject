@@ -1,3 +1,9 @@
+'''
+对于youtube的大播放列表   会有100以后的相关信息  无法通过yt-dlp获取
+所以就用访问自己刷新得到视频信息   通过前端的element获取
+然后处理复制得到的对应元素的txt
+'''
+
 from bs4 import BeautifulSoup
 
 input_file = "yt.txt"

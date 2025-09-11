@@ -7,7 +7,7 @@ with open("playlist.json", "r", encoding="utf-8") as f:
 entries = data["entries"]
 
 # 提取第121到140个（注意：Python下标从0开始）
-selected_entries = entries[101:120]
+selected_entries = entries[121:170]
 
 with open("video_urls.txt", "w", encoding="utf-8") as f:
     for entry in selected_entries:

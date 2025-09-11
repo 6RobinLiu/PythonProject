@@ -1,3 +1,7 @@
+'''
+网页的cookie文件转换为Netscape格式的脚本
+'''
+
 import json
 
 def json_to_netscape(json_file, txt_file):
